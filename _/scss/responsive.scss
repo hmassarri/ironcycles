@@ -1,0 +1,100 @@
+@media (max-width: 767px) {
+
+  .top-header {
+    flex-direction: column;
+
+    .text-start, .text-end {
+      text-align: center !important;
+      padding: 8px 0px;
+    }
+  }
+
+
+
+  .logo-header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    .col {
+      text-align: center !important;
+    }
+    h1 {
+      font-size: 52px;
+      margin-bottom: 16px;
+    }
+  }
+
+
+  .banner-image-1 {
+    padding: 200px 16px;
+    text-align: center !important;
+    .row {
+      text-align: center;
+    }
+    .banner-copy-left, .banner-copy-right {
+      background-color: transparentize($black, 0.25);
+      padding: 100px 16px;
+      border: 1px solid transparentize($white, 0.75);
+      border-radius: 10px;
+    }
+  }
+
+  .banner-image-2 {
+    padding: 200px 16px;
+    text-align: center !important;
+    .row {
+      text-align: center;
+    }
+    .banner-copy-left, .banner-copy-right {
+      background-color: transparentize($black, 0.25);
+      padding: 100px 16px;
+      border: 1px solid transparentize($white, 0.75);
+      border-radius: 10px;
+    }
+  }
+
+  .banner-white {
+    padding: 100px 16px;
+    text-align: center !important;
+
+    .row {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+
+  .img-placeholder {
+      width: 100%;
+      height: auto;
+      margin: 20px auto;
+      background-color: $black;
+      text-align: center;
+  }
+
+
+  footer {
+    background: url("../img/diamondplate.jpg") #000 repeat-y;
+    margin: 0px auto;
+    padding: 32px 16px;
+     .row > * {
+      margin-bottom: 48px;
+    }
+    h2 {
+      font-size: 48px;
+    }
+    .col > ul {
+      text-align: center !important;
+    }
+    .footer-copy {
+      padding: 48px 0px;
+      min-height: 550px;
+    }
+    .footer-copy ul {
+      padding: 0 16px;
+    }
+  }
+}

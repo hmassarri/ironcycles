@@ -1,0 +1,225 @@
+/* COLORS */
+$white:    #FFFFFF;
+$black:    #000000;
+$yellow:   #FFC62F;
+
+$fira-font: 'Fira Sans Extra Condensed', sans-serif;
+$lato-font: 'Lato', sans-serif;
+
+.bg-color {
+  background-color: #010101;
+}
+
+
+
+
+/* SITE STRUCTURE */
+
+/* Global
+------------------ */
+html, body {
+  font-family: $lato-font;
+  color: $black;
+}
+
+h1 {
+  font-size: 84px;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+h2 {
+  font-size: 64px;
+  padding: 0;
+  margin: 32px 0 0 0;
+  font-weight: bold;
+}
+h3 {
+  font-size: 48px;
+  padding: 0;
+  margin: 0 0 32px 0;
+  font-weight: bold;
+}
+h4 {
+  font-size: 28px;
+  padding: 0;
+  margin: 0;
+  font-weight: medium;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $fira-font;
+}
+
+
+
+
+/* =Headers
+------------------ */
+.top-header {
+  background-color: $yellow;
+  color: $black;
+  font-size: 14px;
+  padding: 10px 48px;
+  p {
+    text-align: right;
+  }
+  a {
+    color: $black !important;
+    &:hover, &:focus {
+      color: #289EEE !important;
+    }
+  }
+}
+.logo-header {
+  background-color: $black;
+  color: $white;
+  padding: 10px 48px;
+  background: url('../img/diamondplate1.jpg') repeat-x #000000;
+}
+
+/* =Banners & Images
+------------------ */
+.banner-image-1 {
+  color: $white;
+  background: $black;
+  padding: 500px 48px;
+  background: url('../img/img1.jpg') no-repeat;
+  background-size: cover;
+
+  .banner-copy-left {
+    background-color: transparentize($black, 0.25);
+    padding: 32px 48px;
+    border: 1px solid transparentize($white, 0.75);
+    border-radius: 10px;
+  }
+
+  .banner-copy-right {
+    background-color: transparentize($black, 0.25);
+    padding: 32px 48px;
+    border: 1px solid transparentize($white, 0.75);
+    border-radius: 10px;
+  }
+
+  .left {
+    text-align: left;
+  }
+  .right {
+    text-align: right;
+  }
+}
+
+.banner-image-2 {
+  color: $white;
+  background: $black;
+  padding: 500px 48px;
+  background: url('../img/img9.jpg') no-repeat;
+  background-size: cover;
+
+  .banner-copy-left {
+    background-color: transparentize($black, 0.25);
+    padding: 32px 0 0 48px;
+    border: 1px solid transparentize($white, 0.75);
+    border-radius: 10px;
+  }
+
+  .banner-copy-right {
+    background-color: transparentize($black, 0.25);
+    padding: 32px 48px 0 0;
+    border: 1px solid transparentize($white, 0.75);
+    border-radius: 10px;
+  }
+
+  .left {
+    text-align: left;
+  }
+  .right {
+    text-align: right;
+  }
+}
+
+.banner-white {
+  color: $black;
+  background: $white;
+  padding: 560px 48px;
+}
+
+.aftermarket {
+  padding: 460px 48px 100px 48px;
+}
+
+.img-placeholder {
+    margin: 10px auto;
+    background-color: $black;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+.map {
+  height: auto;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/* =Footer
+------------------ */
+footer {
+  background-color: $black;
+  background: url('../img/diamondplate.jpg') #000000 repeat;
+  padding: 0px 0px;
+  color: $white;
+
+  .footer-copy {
+    background-color: transparentize($black, 0.55);
+    min-height: 600px;
+    padding: 16px 0px;
+    border: 0px solid transparentize($white, 0.90);
+    border-radius: 10px;
+
+    a {
+      color: $white !important;
+      &:hover, &:focus {
+        color: #298EEE !important;
+      }
+    }
+
+    ul {
+      padding: 0 48px;
+      font-size: 18px;
+    }
+    ul li {
+      list-style-type: none;
+    }
+  }
+}
+
+.copyright {
+  background-color: $yellow;
+  padding: 32px;
+  color: $black;
+  font-weight: bold;
+  font-size: 14px;
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* IMPORTS */
+@import 'margin-padding';
+@import 'responsive';
