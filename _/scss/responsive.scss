@@ -1,5 +1,9 @@
 @media (max-width: 767px) {
 
+  ol, ul {
+    padding-left: 2rem;
+  }
+
   .top-header {
     flex-direction: column;
 
@@ -57,7 +61,7 @@
   }
 
   .banner-white {
-    padding: 100px 16px;
+    padding: 100px 32px;
     text-align: center !important;
 
     .row {
@@ -66,6 +70,27 @@
     }
   }
 
+  .banner-black {
+    color: $white;
+    background: rgba($black, 85%);
+    padding: 100px 16px;
+
+    .row {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  .banner-yellow {
+    color: $black;
+    background: $yellow;
+    padding: 100px 16px;
+
+    .row {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
 
   .img-placeholder {
       width: 100%;

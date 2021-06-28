@@ -52,7 +52,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $fira-font;
 }
 
-
+ol, ul {
+  line-height: 2.75rem;
+  padding-left: 0;
+}
 
 
 /* =Headers
@@ -85,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $white;
   background: $black;
   padding: 500px 48px;
-  background: url('../img/img1.jpg') no-repeat;
+  background: url('../img/storefront.jpg') no-repeat;
   background-size: cover;
 
   .banner-copy-left {
@@ -113,8 +116,8 @@ h1, h2, h3, h4, h5, h6 {
 .banner-image-2 {
   color: $white;
   background: $black;
-  padding: 500px 48px;
-  background: url('../img/img9.jpg') no-repeat;
+  padding: 100px 48px;
+  background: url('../img/gallery9.jpg') no-repeat;
   background-size: cover;
 
   .banner-copy-left {
@@ -139,10 +142,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+/* =Banners
+------------------ */
 .banner-white {
   color: $black;
   background: $white;
-  padding: 560px 48px;
+  padding: 100px 48px;
+}
+.banner-black {
+  color: $white;
+  background: rgba($black, 85%);
+  padding: 100px 48px;
+}
+.banner-yellow {
+  color: $black;
+  background-color: $yellow;
+  padding: 100px 48px;
 }
 
 .aftermarket {
@@ -166,7 +182,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.service-subheading {
+  color: rgba($black, 0.5);
+  padding-bottom: 16px;
+}
 
+.service-dynacycle-bg {
+  background: rgba($black, 5%);
+  border: 1px solid $yellow;
+}
+.service-links {
+  color: $yellow;
+
+  &:hover {
+    color: red;
+  }
+}
 
 /* =Footer
 ------------------ */

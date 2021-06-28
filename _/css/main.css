@@ -43,6 +43,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 
+ol, ul {
+  line-height: 2.75rem;
+  padding-left: 0;
+}
+
 /* =Headers
 ------------------ */
 .top-header {
@@ -74,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   background: #000000;
   padding: 500px 48px;
-  background: url("../img/img1.jpg") no-repeat;
+  background: url("../img/storefront.jpg") no-repeat;
   background-size: cover;
 }
 .banner-image-1 .banner-copy-left {
@@ -99,8 +104,8 @@ h1, h2, h3, h4, h5, h6 {
 .banner-image-2 {
   color: #FFFFFF;
   background: #000000;
-  padding: 500px 48px;
-  background: url("../img/img9.jpg") no-repeat;
+  padding: 100px 48px;
+  background: url("../img/gallery9.jpg") no-repeat;
   background-size: cover;
 }
 .banner-image-2 .banner-copy-left {
@@ -122,10 +127,24 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
+/* =Banners
+------------------ */
 .banner-white {
   color: #000000;
   background: #FFFFFF;
-  padding: 560px 48px;
+  padding: 100px 48px;
+}
+
+.banner-black {
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 100px 48px;
+}
+
+.banner-yellow {
+  color: #000000;
+  background-color: #FFC62F;
+  padding: 100px 48px;
 }
 
 .aftermarket {
@@ -146,6 +165,23 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+.service-subheading {
+  color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 16px;
+}
+
+.service-dynacycle-bg {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #FFC62F;
+}
+
+.service-links {
+  color: #FFC62F;
+}
+.service-links:hover {
+  color: red;
 }
 
 /* =Footer
@@ -373,6 +409,10 @@ footer .footer-copy ul li {
 }
 
 @media (max-width: 767px) {
+  ol, ul {
+    padding-left: 2rem;
+  }
+
   .top-header {
     flex-direction: column;
   }
@@ -426,10 +466,30 @@ footer .footer-copy ul li {
   }
 
   .banner-white {
-    padding: 100px 16px;
+    padding: 100px 32px;
     text-align: center !important;
   }
   .banner-white .row {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .banner-black {
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 100px 16px;
+  }
+  .banner-black .row {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .banner-yellow {
+    color: #000000;
+    background: #FFC62F;
+    padding: 100px 16px;
+  }
+  .banner-yellow .row {
     flex-direction: row;
     justify-content: center;
   }
