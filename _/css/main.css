@@ -45,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 
 ol, ul {
   line-height: 2.75rem;
-  padding-left: 0;
 }
 
 /* =Headers
@@ -409,10 +408,6 @@ footer .footer-copy ul li {
 }
 
 @media (max-width: 767px) {
-  ol, ul {
-    padding-left: 2rem;
-  }
-
   .top-header {
     flex-direction: column;
   }
