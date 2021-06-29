@@ -76,14 +76,13 @@ ol, ul {
 ------------------ */
 .banner-image-1 {
   color: #FFFFFF;
-  background: #000000;
-  padding: 500px 48px;
-  background: url("../img/storefront.jpg") no-repeat;
-  background-size: cover;
+  padding: 700px 48px;
+  background: #212121 url("../img/storefront.jpg") center/cover no-repeat;
+  /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
 }
 .banner-image-1 .banner-copy-left {
   background-color: rgba(0, 0, 0, 0.75);
-  padding: 32px 48px;
+  padding: 32px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 10px;
 }
@@ -131,7 +130,7 @@ ol, ul {
 .banner-white {
   color: #000000;
   background: #FFFFFF;
-  padding: 100px 48px;
+  padding: 200px 48px;
 }
 
 .banner-black {
@@ -407,7 +406,37 @@ footer .footer-copy ul li {
   margin-bottom: 64px;
 }
 
+/* =Line height for footer
+------------------ */
+.lh-0 {
+  line-height: 0;
+}
+
+.lh-1 {
+  line-height: 1rem;
+}
+
+.lh-2 {
+  line-height: 2rem;
+}
+
+.lh-3 {
+  line-height: 3rem;
+}
+
+.lh-4 {
+  line-height: 4rem;
+}
+
+.lh-5 {
+  line-height: 5rem;
+}
+
 @media (max-width: 767px) {
+  ol li, ul li {
+    margin-bottom: 32px;
+  }
+
   .top-header {
     flex-direction: column;
   }
@@ -428,7 +457,7 @@ footer .footer-copy ul li {
     text-align: center !important;
   }
   .logo-header h1 {
-    font-size: 52px;
+    font-size: 48px;
     margin-bottom: 16px;
   }
 
@@ -468,6 +497,9 @@ footer .footer-copy ul li {
     flex-direction: row;
     justify-content: center;
   }
+  .banner-white h5 {
+    font-weight: 400;
+  }
 
   .banner-black {
     color: #FFFFFF;
@@ -478,6 +510,9 @@ footer .footer-copy ul li {
     flex-direction: row;
     justify-content: center;
   }
+  .banner-black h5 {
+    font-weight: 400;
+  }
 
   .banner-yellow {
     color: #000000;
@@ -487,6 +522,9 @@ footer .footer-copy ul li {
   .banner-yellow .row {
     flex-direction: row;
     justify-content: center;
+  }
+  .banner-yellow h5 {
+    font-weight: 400;
   }
 
   .img-placeholder {

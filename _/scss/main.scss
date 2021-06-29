@@ -85,14 +85,13 @@ ol, ul {
 ------------------ */
 .banner-image-1 {
   color: $white;
-  background: $black;
-  padding: 500px 48px;
-  background: url('../img/storefront.jpg') no-repeat;
-  background-size: cover;
+  padding: 700px 48px;
+  background: #212121 url('../img/storefront.jpg') center/cover no-repeat;
+  /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
 
   .banner-copy-left {
     background-color: transparentize($black, 0.25);
-    padding: 32px 48px;
+    padding: 32px;
     border: 1px solid transparentize($white, 0.75);
     border-radius: 10px;
   }
@@ -147,7 +146,7 @@ ol, ul {
 .banner-white {
   color: $black;
   background: $white;
-  padding: 100px 48px;
+  padding: 200px 48px;
 }
 .banner-black {
   color: $white;
