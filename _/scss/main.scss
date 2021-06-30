@@ -20,6 +20,7 @@ $lato-font: 'Lato', sans-serif;
 html, body {
   font-family: $lato-font;
   color: $black;
+  background: $yellow;
 }
 
 h1 {
@@ -86,7 +87,7 @@ ol, ul {
 .banner-image-1 {
   color: $white;
   padding: 700px 48px;
-  background: #212121 url('../img/storefront.jpg') center/cover no-repeat;
+  background: $yellow url('../img/storefront.jpg') center/cover no-repeat;
   /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
 
   .banner-copy-left {
