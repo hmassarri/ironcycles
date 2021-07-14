@@ -147,7 +147,17 @@ ol, ul {
 .banner-white {
   color: $black;
   background: $white;
-  padding: 200px 48px;
+  padding: 100px 48px;
+
+  a {
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+
 }
 .banner-black {
   color: $white;
